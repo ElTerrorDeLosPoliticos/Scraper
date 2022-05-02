@@ -1,0 +1,20 @@
+---
+title: ExponiendoPolítiks👁️
+license: CC Attribution 4.0 License
+license_url: http://creativecommons.org/licenses/by/4.0/
+databases:
+  registro_visitas:
+    tables:
+      registro_visitas:
+        source: Registro público de visitas del Ejecutivo y Legislativo
+        source_url: https://www.transparencia.gob.pe/
+        description_html: |-
+          🔱  Registro de Visitas con toda la información sobre el Ejecutivo y Legislativo.<br/>
+          🔱  ¿Quieres saber con quién se reune el presi?<br/>
+          🔱  ¿Quieres saber con quién se reune tu congresista?<br/>
+          🔱  Ojo, si quieres hacer las consultas más personalizadas, puedes usar los filtros por columna o filtrar escribiendo algo de SQL.
+          Puedes descargar toda la db en
+          <a href="https://scraper-jc2kvxncma-ue.a.run.app/registro_visitas.db">este enlace</a>.<br/>
+          🔱  Preguntas/consultas/reportes a <a href="https://twitter.com/FabrizioSulcaR">@FabrizioSulcaR</a> en Twitter.
+        sort_desc: Fecha
+        facets: ["Cargo"]

@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/elterrordelospoliticos/scraper:$SHORT_SHA', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/elterrordelospoliticos/scraper:$SHORT_SHA']
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['beta', 'run','deploy', 'scraper', '--region=us-east1', '--platform=managed', '--image=gcr.io/elterrordelospoliticos/scraper:$SHORT_SHA'] 
